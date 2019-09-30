@@ -1,0 +1,45 @@
+body {
+    font-family: !important;
+    background: #999999;
+    text-align: center;
+}
+
+#content {
+    width: 800px;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background: #555555;
+    border: 1px solid #000000;
+}
+
+h1 {
+	text-align: center;
+}
+
+p {
+	color: red;
+	font-weight: bold;
+	text-align: center;
+}
+
+label {
+    display: block;
+    width: 20em;
+    text-align: right;
+    padding-right: 1em;
+    float: left;
+}
+
+input {
+    display: block;
+    float: left;
+    width: 75px;
+}
+
+#futureValue {
+    color: #000000;
+}
+
+br {
+    clear: both;
+}
