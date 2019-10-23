@@ -24,33 +24,34 @@ var fixPrinter = function() {
 
     //enter your code here and don't forget to send the output to the DOM
     
-    switch (true) {
-        case boolPrinting == true && boolRecognised == true && boolRedLight == true:
-            stringOutput = stringMessage2 + " " + stringMessage3 + " " + stringMessage4;
+    switch(true) {
+        case boolPrinting == true && boolRedLight == true && boolRecognised == true:
+            stringOutput = stringMessage2 + "\n" + stringMessage3 + "\n" + stringMessage4;
             break;
-        case boolPrinting === true && boolRedLight === true && boolRecognised === false:
-            stringOutput = stringMessage4 + " " + stringMessage5;
+        case boolPrinting == true && boolRedLight == true && boolRecognised == false:
+            stringOutput = stringMessage4 + "\n" + stringMessage5;
             break;
-        case boolprinting === true && boolRedLight === false && boolRecognised === true:
-            stringOutput = stringMessage1 + " " + stringMessage2 + " " + stringMessage3;
+        case boolPrinting == true && boolRedLight == false && boolRecognised == true:
+            stringOutput = stringMessage1 + "\n" + stringMessage2 + "\n" + stringMessage3;
             break;
-        case boolprinting === true && boolRedLight === false && boolRecognised === false:
-            string = stringMessage5;
+        case boolPrinting == true && boolRedLight == false && boolRecognised == false:
+            stringOutput = stringMessage5;
             break;
-        case boolprinting === false && boolRedLight === true && boolRecognised === true:
-            string = stringMessage3 + " " + stringMessage4;
+        case boolPrinting == false && boolRedLight == true && boolRecognised == true:
+            stringOutput = stringMessage3 + "\n" + stringMessage4;
             break;
-        case boolprinting === false && boolRedLight === true && boolRecognised === false:
+        case boolPrinting == false && boolRedLight == true && boolRecognised == false:
             stringOutput = stringMessage4;
             break;
-        case boolprinting === false && boolRedLight === false && boolRecognised === true:
+        case boolPrinting == false && boolRedLight == false && boolRecognised == true:
             stringOutput = stringMessage3;
             break;
-        case boolprinting === false && boolRedLight === false && boolRecognised === false:
+        case boolPrinting == false && boolRedLight == false && boolRecognised == false:
             stringOutput = stringMessage6;
             break;
     }
+    $("output").value = stringOutput;
+};
 window.onload = function () {
     $("troubleshoot").onclick = fixPrinter;
-    };
 };
