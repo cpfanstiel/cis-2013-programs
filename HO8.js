@@ -24,8 +24,8 @@ while (isNaN(intMin) == true || intMin < 0){
 
 intMax = parseInt(prompt("What is your high boundary value? \n (Must be greater than 2"));
 
-while (intMax <= intMax - 2){
-        intMax = parseInt(prompt("What is your high boundary value? \n (Must be greater than 2"));
+while (intMax <= intMin + 2){
+    intMax = parseInt(prompt("What is your high boundary value? \n (Must be greater than 2)"));
 }
 
 /*The following line of code generates the random number to be used in the guessing game.
@@ -57,6 +57,7 @@ while (isNaN(intGuess) == true || intGuess < 0){
  * the user chooses the correct number. Each time through the loop updates the loop counter.
  */
 
+ 
  while (intGuess !== intRandom) {
     if (intGuess > intRandom) {
         alert("Try Guessing Lower");
