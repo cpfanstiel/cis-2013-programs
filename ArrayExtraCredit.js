@@ -1,4 +1,4 @@
-/*//Task 1
+//Task 1
 var arrayNames = new Array( 'John', 'Robert', 'Jimmy', 'Bonzo');
 var arrayInstruments = [];
 arrayInstruments[0] = "bass";
@@ -31,7 +31,7 @@ alert (stringTimesTable);
 
 
 //task 3
-*/
+
 
 var stringEvenTimes = "";
 var arrayTimesTable = [];
